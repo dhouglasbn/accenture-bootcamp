@@ -1,0 +1,8 @@
+docker run -d \
+  --name mariadb-dev \
+  -e MARIADB_ROOT_PASSWORD=root \
+  -e MARIADB_DATABASE=viagens \
+  -e MARIADB_USER=adm \
+  -e MARIADB_PASSWORD=password \
+  -p 3306:3306 \
+  mariadb:latest
